@@ -4,7 +4,7 @@
 }
 
 .btn {
-  background-color: #e9971c;
+  background-color: #34e91c;
   border: 0 solid #e5e7eb;
   box-sizing: border-box;
   color: #000000;
@@ -37,7 +37,7 @@
 }
 
 .btn:after {
-  content: "";
+  content: '';
   position: absolute;
   border: 1px solid #000000;
   bottom: 4px;
