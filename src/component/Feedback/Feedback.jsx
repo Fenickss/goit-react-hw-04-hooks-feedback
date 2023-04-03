@@ -3,9 +3,9 @@ import Сontrollers from './Сontrollers';
 import Statistics from '../Statistics';
 
 const Feedback = () => {
-  const [good, setgood] = useState(0);
-  const [neutral, setneutral] = useState(0);
-  const [bad, setbad] = useState(0);
+  const [good, setGood] = useState(0);
+  const [neutral, setNeutral] = useState(0);
+  const [bad, setBad] = useState(0);
 
   const countPositiveFeedbackPercentage = () => {
     return Math.round((good / countTotalFeedback()) * 100);
@@ -22,9 +22,9 @@ const Feedback = () => {
       <h1>Please leave feedback</h1>
 
       <Сontrollers
-        good={() => setgood(good + 1)}
-        neutral={() => setneutral(neutral + 1)}
-        bad={() => setbad(bad + 1)}
+        good={() => setGood(good + 1)}
+        neutral={() => setNeutral(neutral + 1)}
+        bad={() => setBad(bad + 1)}
       />
 
       <Statistics
