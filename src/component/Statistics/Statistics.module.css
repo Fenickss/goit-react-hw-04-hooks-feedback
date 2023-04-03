@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  min-width: 100px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: rgb(19, 109, 27);
+  border: 0 solid #e5e7eb;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.75rem;
+  position: relative;
+  transform: rotate(-2deg);
+  margin-right: 15px;
+}
+
+.item p:last-child {
+  color: black;
+}
+
+.item:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+@media (min-width: 768px) {
+  .item {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
